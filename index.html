@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="PT. Visi Prima Utama (VPU) — Indonesian IT consulting company delivering Service Management, Value Added Selling, and Project Management since 2014." />
+  <title>Company Profile — PT. Visi Prima Utama (VPU)</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A2A57'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='14' font-weight='800' fill='%23E0A526' text-anchor='middle'%3EVPU%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/splash.css" />
+</head>
+
+<body>
+
+  <div id="splash-screen" class="splash-screen" role="status" aria-label="Loading VPU Company Profile">
+    <div class="splash-mesh" aria-hidden="true">
+      <span class="mesh-blob mesh-blob-navy"></span>
+      <span class="mesh-blob mesh-blob-gold"></span>
+      <span class="mesh-blob mesh-blob-teal"></span>
+    </div>
+    <div class="splash-inner">
+      <div class="splash-logo-wrap">
+        <img class="splash-logo" src="assets/logos/log/logo.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="splash-name">PT. Visi Prima Utama</div>
+      <div class="splash-tagline">Enterprise IT Service Management</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var seen;
+      try { seen = sessionStorage.getItem('vpu-splash-seen') === '1'; } catch (e) { seen = false; }
+      if (seen) {
+        var el = document.getElementById('splash-screen');
+        if (el && el.parentNode) el.parentNode.removeChild(el);
+      } else {
+        document.documentElement.classList.add('splash-active');
+      }
+    })();
+  </script>
+
+  <header class="site-header" aria-label="Primary">
+    <div class="site-header-inner">
+      <a class="brand" href="#hero" aria-label="PT. Visi Prima Utama — home">
+        <img class="brand-logo" src="assets/logos/log/logo.png" alt="PT. Visi Prima Utama" />
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+
+      <nav id="site-nav" class="nav" aria-label="Site navigation">
+        <a href="#hero">Home</a>
+        <a href="#journey">Our Journey</a>
+        <a href="#why-vpu">Why VPU</a>
+        <a href="#projects">Projects</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+        <a class="mobile-only" href="#contact">Get in Touch</a>
+      </nav>
+
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="header-actions">
+        <!-- <a class="header-phone" href="tel:+6281234567890">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          +62 812-3456-7890
+        </a> -->
+        <!-- <a class="btn btn-primary" href="#contact">Schedule Consultation</a> -->
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-badge"><span class="dot" aria-hidden="true"></span> PT. VISI PRIMA UTAMA &middot; Est. 2014
+          </div>
+          <h1 class="hero-title">Indonesia's <span class="accent">IT Service Management</span> Authority</h1>
+          <p class="lead hero-lead">VPU specializes in <strong>ITSM expertise and research-driven solutions</strong>
+            that transform how Indonesia's enterprise organizations manage technology. Founded by IT professionals
+            with 20+ years of combined experience, we've pioneered Service Management excellence for over a decade
+            across 52+ leading organizations — from BUMN to government agencies to Fortune 500 enterprises.</p>
+          <div class="actions hero-actions">
+            <a class="btn btn-primary" href="#contact">Schedule Consultation</a>
+            <a class="btn btn-secondary" href="#journey">Learn More</a>
+          </div>
+          <div class="hero-trust">
+            <div class="hero-trust-item"><strong>52+</strong><span>Organizations&nbsp;Served</span></div>
+            <div class="hero-trust-item"><strong>10+</strong><span>Years&nbsp;of&nbsp;Leadership</span></div>
+            <div class="hero-trust-item"><strong>24/7</strong><span>Enterprise&nbsp;Support</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-panel">
+            <div class="hero-feature">
+              <div class="hero-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <div>
+                <div class="hero-feature-title">ITSM Excellence</div>
+                <div class="hero-feature-desc">Pioneering industry standards in Indonesia</div>
+              </div>
+            </div>
+            <div class="hero-feature">
+              <div class="hero-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v20M2 12h20" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="hero-feature-title">R&amp;D-Driven</div>
+                <div class="hero-feature-desc">Research-backed, proven implementations</div>
+              </div>
+            </div>
+            <div class="hero-feature">
+              <div class="hero-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 21v-7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v7" />
+                  <path d="M3 10h18" />
+                  <rect x="5" y="3" width="3" height="7" />
+                  <rect x="16" y="3" width="3" height="7" />
+                </svg>
+              </div>
+              <div>
+                <div class="hero-feature-title">Measurable Impact</div>
+                <div class="hero-feature-desc">Transforming enterprise IT operations</div>
+              </div>
+            </div>
+            <div class="hero-feature">
+              <div class="hero-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div>
+                <div class="hero-feature-title">True Partnership</div>
+                <div class="hero-feature-desc">Long-term success, not just consulting</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="trust-strip" aria-label="Core disciplines">
+      <div class="container">
+        <span class="trust-strip-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+          IT Service Management (ITSM)
+        </span>
+        <span class="trust-strip-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+          Strategic Value Added Selling
+        </span>
+        <span class="trust-strip-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+          Enterprise Project Management
+        </span>
+        <span class="trust-strip-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+          Research-Driven Innovation
+        </span>
+      </div>
+    </section>
+
+    <!-- ============ KEY METRICS ============ -->
+    <section class="section section-tight mesh-light">
+      <div class="container">
+        <div class="metrics-grid">
+          <article class="metric-card reveal">
+            <div class="metric-number"><span data-count-to="52">0</span><span class="suffix">+</span></div>
+            <div class="metric-label">Organizations Served</div>
+            <p class="metric-desc">State-owned enterprises, government, and private sector leaders trust VPU</p>
+          </article>
+          <article class="metric-card reveal">
+            <div class="metric-number"><span data-count-to="10">0</span><span class="suffix">+</span></div>
+            <div class="metric-label">Years Enterprise Leadership</div>
+            <p class="metric-desc">A decade of pioneering ITSM adoption across Indonesia's most complex environments</p>
+          </article>
+          <article class="metric-card reveal">
+            <div class="metric-number"><span data-count-to="99.9" data-decimals="1">0</span><span
+                class="suffix">%</span></div>
+            <div class="metric-label">Enterprise Uptime Focus</div>
+            <p class="metric-desc">Our solutions designed for mission-critical infrastructure reliability</p>
+          </article>
+          <article class="metric-card reveal">
+            <div class="metric-number">24<span class="suffix">/7</span></div>
+            <div class="metric-label">Enterprise Support</div>
+            <p class="metric-desc">Always-on partnership ensuring your IT keeps running</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE JOURNEY ============ -->
+    <section id="journey" class="section bg-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">Our Evolution</div>
+          <h2>A Decade of Enterprise IT Leadership in Indonesia</h2>
+        </div>
+        <div class="card-grid">
+          <article class="info-card reveal">
+            <span class="info-card-eyebrow">Founded 2014</span>
+            <h3>Built on Expertise</h3>
+            <p>Founded by veteran IT professionals with 20+ years of enterprise experience across Indonesia's most
+              demanding sectors.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="info-card-eyebrow">Indonesian Champion</span>
+            <h3>Local Strength</h3>
+            <p>Proud Indonesian company with deep understanding of local business culture, compliance needs, and IT
+              landscape challenges.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="info-card-eyebrow">Proven Excellence</span>
+            <h3>Specialized Expertise</h3>
+            <p>Leading provider of IT Service Management, strategic technology consulting, and enterprise
+              transformation solutions.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="info-card-eyebrow">Partnership Mindset</span>
+            <h3>Your Success Partner</h3>
+            <p>More than consultants — we're invested in your IT success. Long-term partnerships built on trust and
+              measurable results.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY VPU / ITSM ============ -->
+    <section id="why-vpu" class="section mesh-light">
+      <div class="container split">
+        <div class="split-intro reveal">
+          <div class="section-kicker">Why VPU</div>
+          <h2>Setting the Standard for Enterprise IT Excellence in Indonesia</h2>
+          <p class="lead">We don't just implement IT solutions — we architect competitive advantage. Our approach
+            combines global best practices with deep local knowledge to drive measurable business outcomes.</p>
+        </div>
+        <div class="why-list">
+          <article class="why-list-item reveal">
+            <span class="why-list-num">01</span>
+            <div class="why-list-body">
+              <h3>Collaborative Innovation.</h3>
+              <p>We partner with industry leaders and technology pioneers
+                to deliver cutting-edge, client-customized solutions. Your challenges drive our innovation.</p>
+            </div>
+          </article>
+          <article class="why-list-item reveal">
+            <span class="why-list-num">02</span>
+            <div class="why-list-body">
+              <h3>ITSM Pioneers.</h3>
+              <p>Our team pioneered IT Service Management adoption across Indonesia's
+                most complex enterprise environments — banks, telcos, government agencies, and beyond.</p>
+            </div>
+          </article>
+          <article class="why-list-item reveal">
+            <span class="why-list-num">03</span>
+            <div class="why-list-body">
+              <h3>Research-Driven.</h3>
+              <p>Dedicated R&amp;D division continuously studies what makes
+                enterprise IT transformations succeed — and what causes them to fail. Your roadmap benefits from this
+                real-world research.</p>
+            </div>
+          </article>
+          <article class="why-list-item reveal">
+            <span class="why-list-num">04</span>
+            <div class="why-list-body">
+              <h3>Global Community.</h3>
+              <p>Our professionals actively contribute to international IT Service
+                Management communities, bringing world-class knowledge home to your organization.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS / CLIENTS ============ -->
+    <section id="projects" class="section bg-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">Proven Track Record</div>
+          <h2>52+ Organizations Trust VPU for Enterprise IT Leadership</h2>
+          <p class="lead">From Indonesia's largest state-owned enterprises to dynamic private sector innovators,
+            we've successfully delivered IT transformation across every major industry. Our portfolio spans
+            government, banking, telecommunications, energy, manufacturing, and more.</p>
+        </div>
+
+        <!-- BUMN -->
+        <div class="project-group reveal">
+          <div class="project-group-head">
+            <div>
+              <span class="tag-label">State-Owned Enterprise</span>
+              <h3>BUMN</h3>
+            </div>
+            <span class="project-count">14 Organizations</span>
+          </div>
+          <div class="logo-grid">
+            <div class="logo-tile"><img src="assets/logos/bumn/telkomsel.png" alt="Telkomsel" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/telkomsat.png" alt="Telkomsat" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/angkasa-pura-ii.png" alt="Angkasa Pura II"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/pos-indonesia.png" alt="Pos Indonesia" loading="lazy" />
+            </div>
+            <div class="logo-tile"><img src="assets/logos/bumn/pjb.png" alt="PT Pembangkitan Jawa-Bali"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/pindad.png" alt="Pindad" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/timah-industri.png" alt="PT Timah Industri"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/krakatau-jasa-industri.png" alt="Krakatau Jasa Industri"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/pln.png" alt="PLN" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/telkom-indonesia.png" alt="Telkom Indonesia"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/semen-indonesia.png" alt="Semen Indonesia"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/peruri.png" alt="Peruri" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/surveyor-indonesia.png" alt="Surveyor Indonesia"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/bumn/krakatau-it.png" alt="Krakatau Information Technology"
+                loading="lazy" /></div>
+          </div>
+        </div>
+
+        <!-- GOVERNMENT -->
+        <div class="project-group reveal">
+          <div class="project-group-head">
+            <div>
+              <span class="tag-label">Public Sector</span>
+              <h3>Government</h3>
+            </div>
+            <span class="project-count">16 Organizations</span>
+          </div>
+          <div class="logo-grid">
+            <div class="logo-tile"><img src="assets/logos/government/kominfo.png" alt="Kementerian Kominfo"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/bssn.png" alt="Badan Siber dan Sandi Negara (BSSN)"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/ditjen-hubdat.png" alt="Ditjen Hubungan Darat"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/akademi-tni-al.png" alt="Akademi TNI Angkatan Laut"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/tni-ad.png" alt="TNI AD" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/bpsdm.png" alt="BPSDM" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/bnn.png" alt="Badan Narkotika Nasional (BNN)"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/bpk.png" alt="Badan Pemeriksa Keuangan (BPK)"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/kemhan.png" alt="Kementerian Pertahanan"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/mahkamah-agung.png" alt="Mahkamah Agung"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/bappeda.png" alt="Bappeda" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/bawaslu.png" alt="Bawaslu" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/sda-jakarta.png"
+                alt="Dinas Sumber Daya Air DKI Jakarta" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/cimahi.png" alt="Pemerintah Kota Cimahi"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/government/bea-cukai.png" alt="Bea Cukai" loading="lazy" />
+            </div>
+            <div class="logo-tile"><img src="assets/logos/government/pekalongan.png" alt="Pemerintah Kota Pekalongan"
+                loading="lazy" /></div>
+          </div>
+        </div>
+
+        <!-- PRIVATE -->
+        <div class="project-group reveal">
+          <div class="project-group-head">
+            <div>
+              <span class="tag-label">Corporate</span>
+              <h3>Private Sector</h3>
+            </div>
+            <span class="project-count">22 Organizations</span>
+          </div>
+          <div class="logo-grid">
+            <div class="logo-tile"><img src="assets/logos/private/microsoft.png" alt="Microsoft" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/diavox.png" alt="Diavox" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/motorola.png" alt="Motorola" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/finansial-integrasi-teknologi.png"
+                alt="Finansial Integrasi Teknologi" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/universitas-indonesia.png" alt="Universitas Indonesia"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/pama-astra.png" alt="PAMA — Member of Astra"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/temasek.png" alt="Temasek" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/eqt.png" alt="EQT" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/berca-hardayaperkasa.png" alt="Berca Hardayaperkasa"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/linknet.png" alt="Linknet" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/gtn-datacenter.png" alt="GTN Data Center"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/remala-abadi.png" alt="PT Remala Abadi Tbk"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/binus-university.png" alt="Binus University"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/syngenta.png" alt="Syngenta" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/neural-technologies.png" alt="Neural Technologies"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/jaya-ancol.png" alt="PT Pembangunan Jaya Ancol Tbk"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/bank-woori-saudara.png" alt="Bank Woori Saudara"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/gag-nikel.png" alt="PT GAG Nikel" loading="lazy" />
+            </div>
+            <div class="logo-tile"><img src="assets/logos/private/swiss-german-university.png"
+                alt="Swiss German University" loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/atma-jaya.png" alt="Universitas Katolik Atma Jaya"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/ford-foundation.png" alt="Ford Foundation"
+                loading="lazy" /></div>
+            <div class="logo-tile"><img src="assets/logos/private/usaid.png" alt="USAID" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARTICLES / INSIGHTS ============ -->
+    <section id="articles" class="section mesh-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">Industry Insights</div>
+          <h2>Deep Dives into Enterprise IT Strategy and Digital Transformation</h2>
+          <p class="lead">Tactical perspectives from our team on the technology shifts reshaping Indonesian
+            enterprises. From AI's practical ROI to ITSM fundamentals, we share battle-tested insights that drive
+            real business value.</p>
+        </div>
+
+        <div class="article-grid">
+          <a class="article-card reveal" href="article/ai-reshaping-enterprise-it.html">
+            <div class="article-banner banner-ai">
+              <svg viewBox="0 0 120 120" class="banner-icon" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="2.2">
+                  <rect x="30" y="30" width="60" height="60" rx="10" />
+                  <circle cx="60" cy="60" r="14" />
+                  <line x1="60" y1="8" x2="60" y2="30" />
+                  <line x1="60" y1="90" x2="60" y2="112" />
+                  <line x1="8" y1="60" x2="30" y2="60" />
+                  <line x1="90" y1="60" x2="112" y2="60" />
+                  <line x1="22" y1="22" x2="38" y2="38" />
+                  <line x1="98" y1="22" x2="82" y2="38" />
+                  <line x1="22" y1="98" x2="38" y2="82" />
+                  <line x1="98" y1="98" x2="82" y2="82" />
+                </g>
+                <g fill="currentColor">
+                  <circle cx="60" cy="8" r="4" />
+                  <circle cx="60" cy="112" r="4" />
+                  <circle cx="8" cy="60" r="4" />
+                  <circle cx="112" cy="60" r="4" />
+                  <circle cx="22" cy="22" r="4" />
+                  <circle cx="98" cy="22" r="4" />
+                  <circle cx="22" cy="98" r="4" />
+                  <circle cx="98" cy="98" r="4" />
+                </g>
+              </svg>
+            </div>
+            <div class="article-card-body">
+              <span class="tag-label">Artificial Intelligence</span>
+              <h3>AI in Enterprise IT: From Experiment to Competitive Advantage</h3>
+              <p>Discover how Indonesian organizations are moving beyond AI pilots to drive real business value. We
+                break down what works, what doesn't, and where your organization should focus first.</p>
+              <div class="article-meta"><span>Jun 18, 2026</span><span>&middot;</span><span>6 min read</span></div>
+              <span class="article-read-more">Read article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="article-card reveal" href="article/why-you-need-it-consulting-partner.html">
+            <div class="article-banner banner-consulting">
+              <svg viewBox="0 0 120 120" class="banner-icon" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 46 L52 24 L84 8" stroke-dasharray="5 5" />
+                </g>
+                <g fill="currentColor" stroke="none">
+                  <rect x="10" y="46" width="16" height="56" rx="2" />
+                  <rect x="44" y="24" width="16" height="78" rx="2" />
+                  <rect x="78" y="8" width="16" height="94" rx="2" />
+                </g>
+                <circle cx="92" cy="8" r="6" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="article-card-body">
+              <span class="tag-label">IT Consulting</span>
+              <h3>Why Software Alone Won't Transform Your IT — You Need a Partner</h3>
+              <p>Buying tools and building genuine IT capability are two different things. Learn what enterprise
+                organizations gain from vendor-neutral IT consulting and how to avoid costly missteps.</p>
+              <div class="article-meta"><span>Jun 29, 2026</span><span>&middot;</span><span>5 min read</span></div>
+              <span class="article-read-more">Read article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="article-card reveal" href="article/machine-learning-101-for-enterprises.html">
+            <div class="article-banner banner-ml">
+              <svg viewBox="0 0 120 120" class="banner-icon" aria-hidden="true">
+                <g stroke="currentColor" stroke-opacity=".55" stroke-width="1.4">
+                  <line x1="20" y1="30" x2="60" y2="18" />
+                  <line x1="20" y1="30" x2="60" y2="48" />
+                  <line x1="20" y1="60" x2="60" y2="18" />
+                  <line x1="20" y1="60" x2="60" y2="48" />
+                  <line x1="20" y1="60" x2="60" y2="80" />
+                  <line x1="20" y1="90" x2="60" y2="48" />
+                  <line x1="20" y1="90" x2="60" y2="80" />
+                  <line x1="20" y1="90" x2="60" y2="106" />
+                  <line x1="60" y1="18" x2="100" y2="45" />
+                  <line x1="60" y1="48" x2="100" y2="45" />
+                  <line x1="60" y1="48" x2="100" y2="76" />
+                  <line x1="60" y1="80" x2="100" y2="45" />
+                  <line x1="60" y1="80" x2="100" y2="76" />
+                  <line x1="60" y1="106" x2="100" y2="76" />
+                </g>
+                <g fill="currentColor">
+                  <circle cx="20" cy="30" r="4.5" />
+                  <circle cx="20" cy="60" r="4.5" />
+                  <circle cx="20" cy="90" r="4.5" />
+                  <circle cx="60" cy="18" r="4.5" />
+                  <circle cx="60" cy="48" r="4.5" />
+                  <circle cx="60" cy="80" r="4.5" />
+                  <circle cx="60" cy="106" r="4.5" />
+                  <circle cx="100" cy="45" r="4.5" />
+                  <circle cx="100" cy="76" r="4.5" />
+                </g>
+              </svg>
+            </div>
+            <div class="article-card-body">
+              <span class="tag-label">Machine Learning</span>
+              <h3>Machine Learning in Enterprise: What You Need to Know Before You Start</h3>
+              <p>ML is powerful infrastructure, not magic. Explore what successful enterprise ML deployments
+                actually look like, how to identify real ROI opportunities, and where most organizations go wrong.</p>
+              <div class="article-meta"><span>Jul 3, 2026</span><span>&middot;</span><span>7 min read</span></div>
+              <span class="article-read-more">Read article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / FINAL CTA ============ -->
+    <section id="contact" class="section contact-section bg-deep">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="section-kicker">Ready to Transform?</div>
+          <h2>Let's Design Your Enterprise IT Future</h2>
+          <p class="lead">Whether you're tackling ITSM implementation, planning a digital transformation, or
+            looking to optimize your current IT capabilities — our team is ready to partner with you. Get a
+            confidential consultation today.</p>
+          <div class="actions">
+            <a class="btn btn-whatsapp" target="_blank" rel="noopener"
+              href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20Anda.">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
+              </svg>
+              Schedule Consultation
+            </a>
+            <a class="btn btn-secondary" target="_blank" rel="noopener"
+              href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20tertarik%20untuk%20menjajaki%20kemitraan%20dengan%20perusahaan%20Anda.">
+              Explore Partnership
+            </a>
+          </div>
+
+          <div class="contact-grid" aria-label="Contact details">
+            <div class="contact-card">
+              <b>General Inquiries</b>
+              <a class="contact-link" target="_blank" rel="noopener"
+                href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda.">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
+                </svg>
+                +62 812-3456-7890
+              </a>
+            </div>
+            <div class="contact-card">
+              <b>Partnership Inquiries</b>
+              <a class="contact-link" target="_blank" rel="noopener"
+                href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20tertarik%20untuk%20menjajaki%20kemitraan%20dengan%20perusahaan%20Anda.">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
+                </svg>
+                +62 812-3456-7890
+              </a>
+            </div>
+            <div class="contact-card">
+              <b>Head Office</b>
+              <span class="contact-plain">Jakarta, Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 PT. Visi Prima Utama (VPU). All rights reserved.</div>
+  </footer>
+
+  <div class="float-stack">
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+    <a class="float-whatsapp" target="_blank" rel="noopener"
+      href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20Anda.">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
+      </svg>
+      <!-- <span class="label"></span> -->
+    </a>
+  </div>
+
+  <script src="js/splash.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
