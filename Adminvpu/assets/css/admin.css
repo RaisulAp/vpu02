@@ -1,0 +1,59 @@
+/* VPU Admin — static preview stylesheet.
+   Hand-copied from FE/src/admin/admin.css (Tailwind v4 @theme + custom rules).
+   Tailwind utility classes themselves are generated at runtime by the
+   Tailwind CDN script in each page's <head>, configured with the exact same
+   brand/success/warning/danger/info/slate color scales as FE — see the
+   inline tailwind.config in every page. This file only carries the
+   hand-authored, non-utility CSS that FE also ships alongside Tailwind. */
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Sidebar nav scroll area — hide scrollbar, keep scroll (Sidebar.tsx <style>) */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Rich text editor content area (RichTextEditor.tsx / .tiptap.ProseMirror) */
+.tiptap-body {
+  min-height: 300px;
+  padding: 1rem;
+  color: #000;
+}
+.tiptap-body p, .tiptap-body li, .tiptap-body h1, .tiptap-body h2, .tiptap-body h3,
+.tiptap-body h4, .tiptap-body h5, .tiptap-body h6, .tiptap-body strong, .tiptap-body em {
+  color: #000;
+}
+.tiptap-body h2 { font-size: 1.3rem; font-weight: 700; margin: 1rem 0 0.5rem; }
+.tiptap-body p { margin-bottom: 0.75rem; }
+.tiptap-body ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+.tiptap-body ol { list-style: decimal; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+
+/* Read-only content preview (Settings / Privacy Policy preview mode) */
+.admin-article-preview { color: #1e293b; line-height: 1.75; }
+.admin-article-preview p, .admin-article-preview li, .admin-article-preview strong, .admin-article-preview em { color: #1e293b; }
+.admin-article-preview p { margin-bottom: 1rem; }
+.admin-article-preview h1, .admin-article-preview h2, .admin-article-preview h3 {
+  color: #232D42; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem;
+}
+.admin-article-preview ul, .admin-article-preview ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+.admin-article-preview ul { list-style: disc; }
+.admin-article-preview ol { list-style: decimal; }
+.admin-article-preview a { color: #2e46ba; text-decoration: underline; }
+
+/* Static-preview banner — this build has no backend/auth/interactivity */
+.preview-banner {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #232d42;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}

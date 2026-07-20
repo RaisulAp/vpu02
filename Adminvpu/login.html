@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login · VPU Admin</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {50:'#eef1fd',100:'#dce3fb',200:'#b9c7f7',300:'#8fa3f1',400:'#5f79ea',500:'#3a57e8',600:'#2e46ba',700:'#24379a',800:'#1c2b78',900:'#16215c'},
+          success: {50:'#e8f8ef',100:'#c9efda',200:'#98e0b6',300:'#62ce8f',400:'#38bd70',500:'#1aa053',600:'#158744',700:'#106c37',800:'#0c542b',900:'#083d1f'},
+          warning: {50:'#fef0e7',100:'#fdd9be',200:'#fbb388',300:'#f98c52',400:'#f37a34',500:'#f16a1b',600:'#c8550f',700:'#a0440c',800:'#7a3409',900:'#562407'},
+          danger: {50:'#fbeae8',100:'#f5c7c1',200:'#ea958a',300:'#dd6253',400:'#cc4530',500:'#c03221',600:'#9e291b',700:'#7c2015',800:'#5c1710',900:'#3e0f0a'},
+          info: {50:'#e3f6f7',100:'#b9e7ea',200:'#85d3d8',300:'#4fbec5',400:'#26aeb6',500:'#079aa2',600:'#067f87',700:'#05646a',800:'#044a4f',900:'#033236'},
+          slate: {0:'#ffffff',50:'#f5f6fa',100:'#f1f3f9',150:'#e9ecf2',200:'#e9ecef',300:'#dee2e6',400:'#adb5bd',500:'#8a92a6',600:'#6c757d',700:'#495057',800:'#343a40',900:'#232d42',950:'#171e2e'},
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans">
+
+<div class="relative min-h-screen flex flex-col bg-gradient-to-tr from-slate-50 via-indigo-50/30 to-blue-50/40 overflow-hidden">
+
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-indigo-300/30 to-purple-300/20 rounded-full blur-[100px] -mr-48 -mt-48 animate-pulse" style="animation-duration:10s"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-cyan-200/30 to-blue-300/20 rounded-full blur-[100px] -ml-48 -mb-48 animate-pulse" style="animation-duration:12s"></div>
+
+  <div class="relative flex flex-col items-center justify-center flex-1 px-4 py-12 sm:px-6 lg:px-8 z-10">
+    <div class="w-full max-w-md">
+
+      <div class="mb-8 text-center">
+        <div class="flex justify-center mb-5">
+          <div class="relative group">
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
+            <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 text-white shadow-lg hover:shadow-indigo-200 transform hover:scale-105 transition-all duration-300">
+              <i data-lucide="sparkles" class="h-8 w-8 animate-bounce" style="animation-duration:3s"></i>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="text-3xl font-extrabold tracking-tight text-slate-800 mb-1">VPU Admin</h1>
+        <p class="text-indigo-600 font-semibold text-xs tracking-wider uppercase mb-1">Enterprise Content Platform</p>
+        <p class="text-slate-500 text-sm max-w-xs mx-auto">Access your premium dashboard to manage content and team</p>
+      </div>
+
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-indigo-500/5 to-purple-500/5 rounded-2xl blur-2xl"></div>
+
+        <div class="relative rounded-2xl border border-slate-100 bg-white/90 p-8 shadow-xl shadow-slate-200/60 backdrop-blur-md">
+
+          <form novalidate class="space-y-4">
+            <div>
+              <label for="email" class="block text-xs font-bold text-slate-700 tracking-wide uppercase mb-1.5">Email Address</label>
+              <div class="relative">
+                <input
+                  id="email" type="email" autocomplete="email" value="admin@vpu.co.id"
+                  class="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3.5 text-sm text-slate-800 transition-all duration-200 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-4 focus:border-indigo-500 focus:ring-indigo-100"
+                  placeholder="admin@vpu.co.id">
+                <div class="absolute right-4 top-3.5 text-indigo-500 font-bold">✓</div>
+              </div>
+            </div>
+
+            <div>
+              <label for="password" class="block text-xs font-bold text-slate-700 tracking-wide uppercase mb-1.5">Password</label>
+              <div class="relative">
+                <input
+                  id="password" type="password" autocomplete="current-password" value="ChangeMe123!"
+                  class="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3.5 text-sm text-slate-800 transition-all duration-200 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-4 focus:border-indigo-500 focus:ring-indigo-100"
+                  placeholder="••••••••">
+                <div class="absolute right-4 top-3.5 text-indigo-500 font-bold">✓</div>
+              </div>
+            </div>
+
+            <button type="button" onclick="window.location.href='index.html'"
+              class="mt-6 w-full relative group/btn overflow-hidden rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-700 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-200/50 hover:shadow-xl hover:shadow-indigo-300/50 hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-200">
+              <div class="relative flex items-center justify-center gap-2">
+                <span>Sign in to Dashboard</span>
+                <i data-lucide="arrow-right" class="h-4 w-4 transform group-hover/btn:translate-x-1 transition-transform duration-300"></i>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-xs text-slate-400 font-medium">VPU Admin • Enterprise CMS Platform</p>
+        <p class="text-[10px] text-slate-300 mt-1 uppercase tracking-widest">Secure access for authorized administrators</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="preview-banner">
+  <i data-lucide="eye" class="h-3.5 w-3.5"></i>
+  Static preview — hardcoded UI, no live backend. Click "Sign in" to browse the dashboard.
+</div>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

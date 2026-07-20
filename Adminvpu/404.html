@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found · VPU Admin</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: {
+    brand: {50:'#eef1fd',100:'#dce3fb',200:'#b9c7f7',300:'#8fa3f1',400:'#5f79ea',500:'#3a57e8',600:'#2e46ba',700:'#24379a',800:'#1c2b78',900:'#16215c'},
+    success: {50:'#e8f8ef',100:'#c9efda',200:'#98e0b6',300:'#62ce8f',400:'#38bd70',500:'#1aa053',600:'#158744',700:'#106c37',800:'#0c542b',900:'#083d1f'},
+    warning: {50:'#fef0e7',100:'#fdd9be',200:'#fbb388',300:'#f98c52',400:'#f37a34',500:'#f16a1b',600:'#c8550f',700:'#a0440c',800:'#7a3409',900:'#562407'},
+    danger: {50:'#fbeae8',100:'#f5c7c1',200:'#ea958a',300:'#dd6253',400:'#cc4530',500:'#c03221',600:'#9e291b',700:'#7c2015',800:'#5c1710',900:'#3e0f0a'},
+    info: {50:'#e3f6f7',100:'#b9e7ea',200:'#85d3d8',300:'#4fbec5',400:'#26aeb6',500:'#079aa2',600:'#067f87',700:'#05646a',800:'#044a4f',900:'#033236'},
+    slate: {0:'#ffffff',50:'#f5f6fa',100:'#f1f3f9',150:'#e9ecf2',200:'#e9ecef',300:'#dee2e6',400:'#adb5bd',500:'#8a92a6',600:'#6c757d',700:'#495057',800:'#343a40',900:'#232d42',950:'#171e2e'},
+  } } } }
+</script>
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50">
+
+<div class="min-h-screen flex items-center justify-center bg-slate-50 p-4">
+  <div class="relative max-w-2xl w-full">
+    <div class="flex justify-center mb-8">
+      <div class="flex h-24 w-24 items-center justify-center rounded-full bg-danger-50 border border-danger-200">
+        <i data-lucide="alert-triangle" class="h-12 w-12 text-danger-600"></i>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-slate-200 bg-white p-8 sm:p-12 text-center shadow-lg">
+      <div class="mb-6">
+        <h1 class="text-6xl sm:text-7xl font-black text-danger-600 mb-3">404</h1>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Page Not Found</h2>
+        <p class="text-slate-600 text-sm">Oops! The page you're looking for doesn't exist.</p>
+      </div>
+
+      <div class="mb-8 space-y-3">
+        <p class="text-slate-600 leading-relaxed">This page might have been removed, renamed, or doesn't exist in the system. Please check the URL or navigate back to continue.</p>
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-warning-50 border border-warning-200">
+          <i data-lucide="alert-triangle" class="h-4 w-4 text-warning-700"></i>
+          <p class="text-xs font-medium text-warning-700">This route is not available in the admin panel</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button onclick="history.back()" class="flex items-center justify-center gap-2 px-6 py-3 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 font-semibold"><i data-lucide="arrow-left" class="h-5 w-5"></i>Go Back</button>
+        <a href="index.html" class="flex items-center justify-center gap-2 px-6 py-3 bg-brand-500 text-white rounded-lg hover:bg-brand-600 font-semibold"><i data-lucide="home" class="h-5 w-5"></i>Back to Dashboard</a>
+      </div>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <a href="index.html" class="p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 text-left block">
+        <p class="text-2xl mb-2">📊</p><p class="font-semibold text-slate-900 text-sm">Dashboard</p><p class="text-xs text-slate-500 mt-1">Quick access</p>
+      </a>
+      <a href="articles.html" class="p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 text-left block">
+        <p class="text-2xl mb-2">📝</p><p class="font-semibold text-slate-900 text-sm">Articles</p><p class="text-xs text-slate-500 mt-1">Quick access</p>
+      </a>
+      <a href="settings.html" class="p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 text-left block">
+        <p class="text-2xl mb-2">⚙️</p><p class="font-semibold text-slate-900 text-sm">Settings</p><p class="text-xs text-slate-500 mt-1">Quick access</p>
+      </a>
+    </div>
+
+    <p class="text-center text-xs text-slate-500 mt-8">If you believe this is an error, please contact your system administrator</p>
+  </div>
+</div>
+
+<div class="preview-banner"><i data-lucide="eye" class="h-3.5 w-3.5"></i>Static preview — hardcoded UI copied from FE/src/admin, no live backend or auth.</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>
