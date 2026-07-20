@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articles · VPU Admin</title>
+  <title>Articles &middot; VPU Admin</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,7 +22,7 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="/Adminvpu/assets/css/admin.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -47,7 +47,7 @@
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Overview</p>
             <div class="space-y-1">
-              <a href="index.html"
+              <a href="/Adminvpu/index.html"
                 class="group relative flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100">
                 <i data-lucide="layout-dashboard"
                   class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i>
@@ -58,12 +58,12 @@
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Content</p>
             <div class="space-y-1">
-              <a href="articles.html"
+              <a href="/Adminvpu/articles.html"
                 class="group relative flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg bg-brand-500 text-white">
                 <i data-lucide="newspaper" class="h-5 w-5 flex-shrink-0 text-white"></i>
                 <span class="flex-1">Articles</span>
               </a>
-              <a href="projects.html"
+              <a href="/Adminvpu/projects.html"
                 class="group relative flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100">
                 <i data-lucide="folder-kanban"
                   class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i>
@@ -74,13 +74,13 @@
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Administration</p>
             <div class="space-y-1">
-              <a href="users.html"
+              <a href="/Adminvpu/users.html"
                 class="group relative flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100">
                 <i data-lucide="users" class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i>
                 <span class="flex-1">Users</span>
                 <i data-lucide="lock" class="h-3 w-3 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i>
               </a>
-              <a href="roles.html"
+              <a href="/Adminvpu/roles.html"
                 class="group relative flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100">
                 <i data-lucide="shield" class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i>
                 <span class="flex-1">Roles &amp; Permissions</span>
@@ -91,7 +91,7 @@
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Preferences</p>
             <div class="space-y-1">
-              <a href="settings.html"
+              <a href="/Adminvpu/settings.html"
                 class="group relative flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100">
                 <i data-lucide="settings" class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i>
                 <span class="flex-1">Settings</span>
@@ -156,7 +156,7 @@
               <h1 class="text-2xl font-bold text-slate-900">Articles</h1>
               <p class="text-slate-500 text-sm mt-1">Manage your blog posts and news</p>
             </div>
-            <a href="articles-new.html"
+            <a href="/Adminvpu/articles-new.html"
               class="flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-500 text-white rounded-lg hover:bg-brand-600 transition-colors font-semibold">
               <i data-lucide="plus" class="h-[18px] w-[18px]"></i>
               New Article
@@ -211,12 +211,12 @@
                     <td class="px-5 py-4 align-top"><span
                         class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-warning-500 text-white capitalize">draft</span>
                     </td>
-                    <td class="px-5 py-4 align-top text-slate-600 whitespace-nowrap">—</td>
+                    <td class="px-5 py-4 align-top text-slate-600 whitespace-nowrap">&mdash;</td>
                     <td class="px-5 py-4 align-top text-right whitespace-nowrap">
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Publish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -243,7 +243,7 @@
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Unpublish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -270,7 +270,7 @@
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Unpublish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -297,7 +297,7 @@
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Unpublish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -319,12 +319,12 @@
                     <td class="px-5 py-4 align-top"><span
                         class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-warning-500 text-white capitalize">draft</span>
                     </td>
-                    <td class="px-5 py-4 align-top text-slate-600 whitespace-nowrap">—</td>
+                    <td class="px-5 py-4 align-top text-slate-600 whitespace-nowrap">&mdash;</td>
                     <td class="px-5 py-4 align-top text-right whitespace-nowrap">
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Publish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -351,7 +351,7 @@
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Unpublish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -378,7 +378,7 @@
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Unpublish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -405,7 +405,7 @@
                       <div class="flex justify-end gap-1.5">
                         <button
                           class="px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200">Unpublish</button>
-                        <a href="articles-new.html"
+                        <a href="/Adminvpu/articles-new.html"
                           class="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"><i
                             data-lucide="pencil" class="h-4 w-4"></i></a>
                         <button class="p-1.5 rounded-lg text-slate-400 hover:bg-danger-50 hover:text-danger-600"><i
@@ -439,7 +439,7 @@
 
   <div class="preview-banner">
     <i data-lucide="eye" class="h-3.5 w-3.5"></i>
-    Static preview.
+    Static preview
   </div>
 
   <script>lucide.createIcons();</script>

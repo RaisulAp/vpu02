@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roles &amp; Permissions · VPU Admin</title>
+  <title>Roles &amp; Permissions Â· VPU Admin</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,7 +22,7 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="/Adminvpu/assets/css/admin.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -44,7 +44,7 @@
         <div class="space-y-6">
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Overview</p>
-            <div class="space-y-1"><a href="index.html"
+            <div class="space-y-1"><a href="/Adminvpu/index.html"
                 class="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100"><i
                   data-lucide="layout-dashboard"
                   class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i><span
@@ -53,12 +53,12 @@
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Content</p>
             <div class="space-y-1">
-              <a href="articles.html"
+              <a href="/Adminvpu/articles.html"
                 class="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100"><i
                   data-lucide="newspaper"
                   class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i><span
                   class="flex-1">Articles</span></a>
-              <a href="projects.html"
+              <a href="/Adminvpu/projects.html"
                 class="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100"><i
                   data-lucide="folder-kanban"
                   class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i><span
@@ -68,12 +68,12 @@
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Administration</p>
             <div class="space-y-1">
-              <a href="users.html"
+              <a href="/Adminvpu/users.html"
                 class="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100"><i
                   data-lucide="users" class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i><span
                   class="flex-1">Users</span><i data-lucide="lock"
                   class="h-3 w-3 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i></a>
-              <a href="roles.html"
+              <a href="/Adminvpu/roles.html"
                 class="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg bg-brand-500 text-white"><i
                   data-lucide="shield" class="h-5 w-5 flex-shrink-0 text-white"></i><span class="flex-1">Roles &amp;
                   Permissions</span><i data-lucide="lock" class="h-3 w-3 flex-shrink-0 text-white"></i></a>
@@ -81,7 +81,7 @@
           </div>
           <div>
             <p class="px-3 text-xs font-bold uppercase tracking-widest text-slate-500 mb-2.5">Preferences</p>
-            <div class="space-y-1"><a href="settings.html"
+            <div class="space-y-1"><a href="/Adminvpu/settings.html"
                 class="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100"><i
                   data-lucide="settings"
                   class="h-5 w-5 flex-shrink-0 text-slate-400 group-hover:text-slate-600"></i><span
@@ -101,7 +101,7 @@
             <button class="lg:hidden p-1.5 -ml-1.5 hover:bg-slate-100 rounded-lg text-slate-600"><i data-lucide="menu"
                 class="h-5 w-5"></i></button>
             <!-- NOTE: FE's Topbar.sectionTitleFor() has no explicit case for /Adminvpu/roles and
-               falls through to its 'Dashboard' default — reproduced here for exact parity. -->
+               falls through to its 'Dashboard' default â€” reproduced here for exact parity. -->
             <div class="flex items-center gap-2 text-sm"><span class="font-semibold text-slate-600">Admin</span><i
                 data-lucide="chevron-right" class="h-4 w-4 text-slate-400"></i><span
                 class="font-bold text-slate-900 truncate">Dashboard</span></div>
@@ -132,7 +132,7 @@
               <div class="flex items-center gap-3 mb-2"><i data-lucide="shield" class="h-8 w-8 text-slate-600"></i>
                 <h1 class="text-3xl font-bold text-slate-900">Roles &amp; Permissions</h1>
               </div>
-              <p class="text-slate-600 text-sm mt-1">Create, edit, and delete roles — check the permissions each one
+              <p class="text-slate-600 text-sm mt-1">Create, edit, and delete roles â€” check the permissions each one
                 should have</p>
             </div>
             <button
