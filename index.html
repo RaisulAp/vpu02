@@ -7,6 +7,18 @@
   <meta name="description"
     content="PT. Visi Prima Utama (VPU) — Indonesian IT consulting company delivering Service Management, Value Added Selling, and Project Management since 2014." />
   <title>Company Profile — PT. Visi Prima Utama (VPU)</title>
+  <script>
+    // Blocking + synchronous on purpose: applies the stored/preferred theme
+    // to <html> before first paint, so there's no light-mode flash
+    // (see js/theme.js for the toggle-button half).
+    (function () {
+      try {
+        var stored = localStorage.getItem('vpu-theme');
+        var wantsDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (wantsDark) document.documentElement.classList.add('dark');
+      } catch (e) {}
+    })();
+  </script>
   <link rel="icon"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A2A57'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='14' font-weight='800' fill='%23E0A526' text-anchor='middle'%3EVPU%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -77,6 +89,19 @@
           +62 812-3456-7890
         </a> -->
         <!-- <a class="btn btn-primary" href="#contact">Schedule Consultation</a> -->
+        <button type="button" class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-icon theme-toggle-sun">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.5" />
+              <path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" />
+            </svg>
+          </span>
+          <span class="theme-toggle-icon theme-toggle-moon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
   </header>
@@ -84,6 +109,7 @@
   <main>
     <!-- ============ HERO ============ -->
     <section id="hero" class="hero">
+      <canvas class="hero-particle-field" aria-hidden="true"></canvas>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="hero-badge"><span class="dot" aria-hidden="true"></span> PT. VISI PRIMA UTAMA &middot; Est. 2014
@@ -664,6 +690,8 @@
   </div>
 
   <script src="js/splash.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
 </body>
 
