@@ -8,15 +8,16 @@
     content="PT. Visi Prima Utama (VPU) — Indonesian IT consulting company delivering Service Management, Value Added Selling, and Project Management since 2014." />
   <title>Company Profile — PT. Visi Prima Utama (VPU)</title>
   <script>
-    // Blocking + synchronous on purpose: applies the stored/preferred theme
-    // to <html> before first paint, so there's no light-mode flash
+    // Blocking + synchronous on purpose: applies the stored theme
+    // to <html> before first paint, so there's no flash.
+    // Light mode is the default regardless of OS preference; dark
+    // only applies if the user explicitly toggled it on before.
     // (see js/theme.js for the toggle-button half).
     (function () {
       try {
         var stored = localStorage.getItem('vpu-theme');
-        var wantsDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (wantsDark) document.documentElement.classList.add('dark');
-      } catch (e) {}
+        if (stored === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) { }
     })();
   </script>
   <link rel="icon"
@@ -91,13 +92,16 @@
         <!-- <a class="btn btn-primary" href="#contact">Schedule Consultation</a> -->
         <button type="button" class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false">
           <span class="theme-toggle-icon theme-toggle-sun">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="4.5" />
-              <path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" />
+              <path
+                d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" />
             </svg>
           </span>
           <span class="theme-toggle-icon theme-toggle-moon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
               <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
             </svg>
           </span>
@@ -622,7 +626,7 @@
             confidential consultation today.</p>
           <div class="actions">
             <a class="btn btn-whatsapp" target="_blank" rel="noopener"
-              href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20Anda.">
+              href="https://wa.me/62818182589?text=Halo%20Admin%20VPU%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20untuk%20perusahaan%20kami.">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
@@ -630,7 +634,7 @@
               Schedule Consultation
             </a>
             <a class="btn btn-secondary" target="_blank" rel="noopener"
-              href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20tertarik%20untuk%20menjajaki%20kemitraan%20dengan%20perusahaan%20Anda.">
+              href="https://wa.me/62818182589?text=Halo%20Admin%20VPU%2C%20saya%20ingin%20menjajaki%20peluang%20kemitraan%20dengan%20perusahaan%20Anda.">
               Explore Partnership
             </a>
           </div>
@@ -639,23 +643,23 @@
             <div class="contact-card">
               <b>General Inquiries</b>
               <a class="contact-link" target="_blank" rel="noopener"
-                href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda.">
+                href="https://wa.me/62818182589?text=Halo%20Admin%20VPU%2C%20saya%20ingin%20bertanya%20lebih%20lanjut%20mengenai%20layanan%20Anda.">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path
                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
                 </svg>
-                +62 812-3456-7890
+                +62 818-182-589
               </a>
             </div>
             <div class="contact-card">
               <b>Partnership Inquiries</b>
               <a class="contact-link" target="_blank" rel="noopener"
-                href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20tertarik%20untuk%20menjajaki%20kemitraan%20dengan%20perusahaan%20Anda.">
+                href="https://wa.me/62818182589?text=Halo%20Admin%20VPU%2C%20saya%20ingin%20menjajaki%20peluang%20kemitraan%20dengan%20perusahaan%20Anda.">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path
                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
                 </svg>
-                +62 812-3456-7890
+                +62 818-182-589
               </a>
             </div>
             <div class="contact-card">
@@ -680,7 +684,7 @@
       </svg>
     </button>
     <a class="float-whatsapp" target="_blank" rel="noopener"
-      href="https://wa.me/6281234567890?text=Halo%20VPU%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20Anda.">
+      href="https://wa.me/62818182589?text=Halo%20Admin%20VPU%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20Anda.">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path
           d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.1 11.943c0 2.104.549 4.158 1.595 5.972L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.005c6.582 0 11.946-5.363 11.949-11.943a11.87 11.87 0 0 0-3.478-8.403" />
